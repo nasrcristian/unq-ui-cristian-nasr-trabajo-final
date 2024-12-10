@@ -1,0 +1,14 @@
+.main-container{
+    padding: 20px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.score{
+    color: black;
+    font-size: 35px;
+    text-align: center;
+}

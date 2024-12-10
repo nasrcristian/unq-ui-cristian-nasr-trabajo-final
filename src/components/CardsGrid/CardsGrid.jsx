@@ -1,11 +1,12 @@
-import Card from "./Card/Card"
+import Card from "../Card/Card"
+import "./CardsGrid.css"
 
-function CardsGrid(){
+function CardsGrid({handleSelectCard, data}){
 
-    const array = [1, 2, 3]
-    const arrayDoble = array.concat(array).sort((x, y) => 0.5 - Math.random())
     return(
-        arrayDoble.map((item, index) => <Card item={item} key={index}/>)
+        <div className="grid-container">
+            {data.current.map((item, index) => <Card item={item} handleSelectCard={handleSelectCard} key={index}/>)}
+        </div>
     )
 }
 
