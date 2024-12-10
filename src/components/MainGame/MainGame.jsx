@@ -1,4 +1,4 @@
-import { getRandomizedPairs } from "../../../assets/data";
+import { getRandomizedPairs } from "../../assets/data";
 import CardsGrid from "../CardsGrid/CardsGrid";
 import { useEffect, useRef, useState } from "react";
 import './MainGame.css'
