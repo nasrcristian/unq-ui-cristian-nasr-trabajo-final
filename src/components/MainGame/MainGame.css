@@ -6,21 +6,37 @@
 }
 
 .main-title{
-    color: black;
+    color:rgb(33, 7, 57);
     font-size: 2rem;
     text-align: center;
     font-weight: 600;
     margin: 0;
+    text-decoration: underline;
 }
 
 .score-container{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     width: 100%;
 }
 
 .score{
-    color: black;
-    font-size: clamp(1rem, 200%, 4rem);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color:rgb(33, 7, 57)
 }
+
+@media(max-width:1000px) {
+    .score{
+        font-size: 1.3rem;
+    }
+}
+
+@media(max-width:700px) {
+    .score{
+        font-size: 1rem;
+    }
+}
+
