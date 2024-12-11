@@ -18,7 +18,6 @@ function Card({item, handleSelectCard}){
 
 
     const handleCardClick = () => {
-        console.log(item)
         if(!isSelectedCard && !isFoundCard & !showImagesInitially)
         handleSelectCard({data: item, selectedSetter: setIsSelectedCard, foundSetter: setIsFoundCard})
     }

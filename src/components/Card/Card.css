@@ -1,15 +1,7 @@
-/* .card-container{
-
-    
-    border-radius: 15px;
-    width: clamp(140px, 12vw, 600px);
-    height: clamp(140px, 12vw, 600px);
-    
-} */
 
 .card-image{
-    width: clamp(140px, 12vw, 600px);
-    height: clamp(140px, 12vw, 600px);
+    width: clamp(80px, 14vw, 160px);
+    height: clamp(80px, 14vw, 160px);
     border-radius: 15px;
     padding: 5px;
     margin: 15px;
