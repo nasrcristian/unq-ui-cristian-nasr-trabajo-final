@@ -1,0 +1,74 @@
+.modal-background{
+    width: 100vw; 
+    height: 100vh; 
+    background-color: rgba(0, 0, 0, 0.507); 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+}
+
+.modal-main{
+    width: clamp(200px, 80%, 500px);
+    background: radial-gradient(circle at 10% 20%, rgb(246, 133, 133) 16.3%, rgb(172, 131, 241) 90%);
+    border-radius: 12px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.modal-title{
+    color: black;
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.modal-label{
+    font-weight: 600;
+    color: black;
+}
+
+.modal-select{
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    width: 100%
+}
+
+.modal-label-container{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.modal-input{
+    width: 98%;
+    padding: 2px 2px;
+    margin: 0;
+    background-color: white;
+    color: black;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.modal-button{
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background-color: rgba(193, 193, 193, 0.684);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    color:black;
+}
+
+.modal-button:hover{
+    cursor: pointer;
+    background-color: rgba(51, 4, 87, 0.559);
+    color: rgb(255, 174, 0);
+}
