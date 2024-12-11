@@ -5,17 +5,15 @@ import './MainGame.css'
 
 
 function MainGame({options, endGame}){
-    const {cardsQuantity, gamemode} = options
-    const totalPairs = cardsQuantity / 2
+    const {pairsQuantity, gamemode} = options
     const [selectedCards, setSelectedCards] = useState([])
     const [foundPairs, setFoundPairs] = useState(0)
     const [firstPlayerScore, setFirstPlayerScore] = useState(0)
     const [secondPlayerScore, setSecondPlayerScore] = useState(0)
-    const cards = useRef(getRandomizedPairs(totalPairs))
+    const cards = useRef(getRandomizedPairs(pairsQuantity))
 
     gamemode.playersScore = [firstPlayerScore, secondPlayerScore]
     gamemode.playersSetter = [setFirstPlayerScore, setSecondPlayerScore]
-
 
     useEffect(() => {
         if(selectedCards.length === 2){
@@ -24,7 +22,7 @@ function MainGame({options, endGame}){
     }, [selectedCards])
 
     useEffect(()=> {
-        if(foundPairs === totalPairs){
+        if(foundPairs == pairsQuantity){
             endGame(gamemode.getDisplayMsg())
         }
     }, [foundPairs])

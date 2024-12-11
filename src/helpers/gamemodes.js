@@ -25,7 +25,7 @@ export class Single {
     }
 
     getDisplayMsg(){
-        return `Finalizaste con ${this.playersScore[0]} puntos` 
+        return `¡Finalizaste con ${this.playersScore[0]} puntos!` 
     }
 
 }

@@ -24,7 +24,7 @@ function Card({item, handleSelectCard}){
 
     return(
         <div className="card-container">
-            <img src={showImagesInitially || isSelectedCard || isFoundCard? item : ""} onClick={handleCardClick} className={"card-image"}/>
+            <img src={showImagesInitially || isSelectedCard || isFoundCard? item : null} onClick={handleCardClick} className={"card-image"}/>
         </div>
     )
 }

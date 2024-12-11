@@ -7,14 +7,11 @@ function OptionsModal({startGame}){
 
     const SINGLE = "SINGLE"
     const VERSUS = "VERSUS"
-    const [cardsQuantity, setCardsQuantity] = useState(8)
+    const [pairsQuantity, setPairsQuantity] = useState(8)
     const [gamemode, setGameMode] = useState(SINGLE) 
     const [firstPlayerName, setFirstPlayerName] = useState("")
     const [secondPlayerName, setSecondPlayerName] = useState("")
-    const quantityOptions = Array.from({ length: maxQuantityOfAnimals - 2 }, (_, i) => (i + 3) * 2);
-
-
-    console.log(quantityOptions)
+    const quantityOptions = Array.from({ length: maxQuantityOfAnimals - 2 }, (_, i) => i + 3);
 
     const handleStartGame = () => {
         let selectedGamemode;
@@ -24,7 +21,7 @@ function OptionsModal({startGame}){
             selectedGamemode = new Versus(firstPlayerName, secondPlayerName)
         }
 
-        startGame({cardsQuantity: cardsQuantity, gamemode: selectedGamemode})
+        startGame({pairsQuantity: pairsQuantity, gamemode: selectedGamemode})
     }
 
 
@@ -35,25 +32,20 @@ function OptionsModal({startGame}){
 
                 <div className="modal-label-container">
                     <label className="modal-label">
-                        Seleccione la cantidad de cartas totales: 
+                        Seleccione la cantidad de pares de cartas: 
                     </label>
                     <select 
-                        name="cantidad de cartas" 
+                        name="cantidad de pares" 
                         defaultValue={8}
-                        onChange={e => setCardsQuantity(e.target.value)}
+                        onChange={e => setPairsQuantity(e.target.value)}
                         className="modal-select"
                     >
                         {
                             quantityOptions.map((option) =>
-                            <option value={option}>
-                                {option} cartas
+                            <option value={option} key={option}>
+                                {option} pares
                             </option>)
                         }
-                        {/* <option value={6}> 6 cartas </option>
-                        <option value={8}> 8 cartas </option>
-                        <option value={10}> 10 cartas </option>
-                        <option value={12}> 12 cartas </option>
-                        <option value={16}> 16 cartas </option> */}
                     </select>
                 </div>
                 <div className="modal-label-container">
