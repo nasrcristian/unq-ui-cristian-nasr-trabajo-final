@@ -5,8 +5,8 @@
 
 
 .card-image{
-    width: clamp(90px, 19vw, 160px);
-    height: clamp(90px, 19vw, 160px);
+    width: clamp(90px, 9vw, 140px);
+    height: clamp(90px, 9vw, 140px);
     border-radius: 15px;
     padding: 5px;
     margin: 10px;
