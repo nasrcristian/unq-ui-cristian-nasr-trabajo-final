@@ -23,10 +23,13 @@ function Card({item, handleSelectCard}){
     }
 
     return(
-        <div className="card-container">
-            <img src={showImagesInitially || isSelectedCard || isFoundCard? item : null} onClick={handleCardClick} className={"card-image"}/>
-        </div>
+            showImagesInitially || isSelectedCard || isFoundCard?
+                <img src={item} className={"card-container"}/> 
+                :
+                <div className="card-container"  onClick={handleCardClick}></div>
+
+            
     )
 }
 
-export default Card
+export default Card 
