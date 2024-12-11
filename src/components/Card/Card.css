@@ -1,11 +1,17 @@
+.card-container{
+    align-self: center;
+    justify-self: center;
+}
+
 
 .card-image{
-    width: clamp(80px, 14vw, 160px);
-    height: clamp(80px, 14vw, 160px);
+    width: clamp(90px, 19vw, 160px);
+    height: clamp(90px, 19vw, 160px);
     border-radius: 15px;
     padding: 5px;
-    margin: 15px;
+    margin: 10px;
     background-color: rgb(50, 9, 132);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+ 
 }
 

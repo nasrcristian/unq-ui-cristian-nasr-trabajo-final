@@ -16,7 +16,8 @@ import camel from './camel.jpg'
 
 const animals = [
     oso,
-    rata,
+    camel,
+    pato,
     tortuga, 
     nessie,
     perro,
@@ -26,9 +27,9 @@ const animals = [
     gorila,
     mono,
     orca,
-    pato,
     alce, 
-    camel
+    rata
+    
 ].sort((x, y) => 0.5 - Math.random())
 
 export function getRandomizedPairs(quantityOfPairs) {
@@ -36,3 +37,5 @@ export function getRandomizedPairs(quantityOfPairs) {
     const slicedAnimals = animals.slice(0, quantityOfPairs);
     return slicedAnimals.concat(slicedAnimals).sort((x, y) => 0.5 - Math.random())
 }
+
+export const maxQuantity = animals.length

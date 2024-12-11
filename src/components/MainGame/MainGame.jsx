@@ -59,12 +59,14 @@ function MainGame({options, endGame}){
 
         return(        
             <div className="main-container">
-                <p>Memotest de animales</p>
-                <p className="score">{gamemode.displayFirstScore()}</p>
-                {gamemode.displaySecondScore() &&
-                <p className="score">
-                   {gamemode.displaySecondScore()}
-                </p> }
+                <p className="main-title">¡Encuentra las parejas de animales!</p>
+                <div className="score-container">
+                    <p className="score">{gamemode.displayFirstScore()}</p>
+                    {gamemode.displaySecondScore() &&
+                    <p className="score">
+                    {gamemode.displaySecondScore()}
+                    </p>}
+                </div>    
                 <CardsGrid handleSelectCard={handleSelectCard} data={cards}/>
             </div>
         )

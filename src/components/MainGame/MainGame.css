@@ -1,14 +1,26 @@
 .main-container{
-    padding: 20px;
-    margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
+.main-title{
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    margin: 0;
+}
+
+.score-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
 .score{
     color: black;
-    font-size: 35px;
-    text-align: center;
+    font-size: clamp(1rem, 200%, 4rem);
 }

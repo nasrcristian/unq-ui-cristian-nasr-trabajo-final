@@ -1,8 +1,18 @@
+.container{
+    display: flex;
+    width: 95%;
+    align-items: center;
+    justify-content: center;
+}
+
 .grid-container{
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     align-items: center;
     justify-content: center;
+    background-color: rgba(236, 236, 236, 0.229);
+    border-radius: 5px;
 }
 
 @media (max-width: 1200px){
@@ -11,7 +21,7 @@
     }
 }
 
-@media (max-width: 900px){
+@media (max-width: 920px){
     .grid-container{
         grid-template-columns: repeat(4, 1fr);
     }
@@ -23,14 +33,8 @@
     }
 }
 
-@media (max-width: 340px){
+@media (max-width: 350px){
     .grid-container{
         grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 360px){
-    .grid-container{
-        grid-template-columns: repeat(1, 1fr);
     }
 }
