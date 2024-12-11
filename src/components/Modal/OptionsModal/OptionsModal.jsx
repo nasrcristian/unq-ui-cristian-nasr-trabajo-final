@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { maxQuantityOfAnimals } from "../../../assets/data"
 import '../Modal.css'
 import { Single, Versus } from "../../../helpers/gamemodes"
 
@@ -10,7 +11,10 @@ function OptionsModal({startGame}){
     const [gamemode, setGameMode] = useState(SINGLE) 
     const [firstPlayerName, setFirstPlayerName] = useState("")
     const [secondPlayerName, setSecondPlayerName] = useState("")
+    const quantityOptions = Array.from({ length: maxQuantityOfAnimals - 2 }, (_, i) => (i + 3) * 2);
 
+
+    console.log(quantityOptions)
 
     const handleStartGame = () => {
         let selectedGamemode;
@@ -39,11 +43,17 @@ function OptionsModal({startGame}){
                         onChange={e => setCardsQuantity(e.target.value)}
                         className="modal-select"
                     >
-                        <option value={6}> 6 cartas </option>
+                        {
+                            quantityOptions.map((option) =>
+                            <option value={option}>
+                                {option} cartas
+                            </option>)
+                        }
+                        {/* <option value={6}> 6 cartas </option>
                         <option value={8}> 8 cartas </option>
                         <option value={10}> 10 cartas </option>
                         <option value={12}> 12 cartas </option>
-                        <option value={16}> 16 cartas </option>
+                        <option value={16}> 16 cartas </option> */}
                     </select>
                 </div>
                 <div className="modal-label-container">

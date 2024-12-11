@@ -6,6 +6,7 @@
 }
 
 .main-title{
+    justify-self:flex-start;
     color:rgb(33, 7, 57);
     font-size: 2rem;
     text-align: center;

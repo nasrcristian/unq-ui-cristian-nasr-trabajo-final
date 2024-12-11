@@ -12,7 +12,15 @@ import tortuga from './tortuga.jpg'
 import nessie from './nessie.jpg'
 import perro from './perro.jpg'
 import camel from './camel.jpg'
-
+import caballo from './caballo.jpg'
+import leon from './leon.jpg'
+import mojo from './mojo.jpg'
+import osoBallet from './oso-ballet.jpg'
+import osoRulo from './oso-rulo.jpg'
+import patitos from './patitos.jpg'
+import pinky from './pinky.jpg'
+import tenazas from './tenazas.jpg'
+import tiburon from './tiburon.jpg'
 
 const animals = [
     oso,
@@ -28,8 +36,16 @@ const animals = [
     mono,
     orca,
     alce, 
-    rata
-    
+    rata,
+    caballo,
+    leon,
+    mojo,
+    osoBallet,
+    osoRulo,
+    patitos,
+    pinky,
+    tenazas,
+    tiburon
 ].sort((x, y) => 0.5 - Math.random())
 
 export function getRandomizedPairs(quantityOfPairs) {
@@ -38,4 +54,4 @@ export function getRandomizedPairs(quantityOfPairs) {
     return slicedAnimals.concat(slicedAnimals).sort((x, y) => 0.5 - Math.random())
 }
 
-export const maxQuantity = animals.length
+export const maxQuantityOfAnimals = animals.length
