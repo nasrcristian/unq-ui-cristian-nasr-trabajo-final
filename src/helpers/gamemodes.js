@@ -60,7 +60,13 @@ export class Versus {
     }
 
     getDisplayMsg(){
-        return "El ganador es " + (this.playersScore[0] > this.playersScore[1]? `${this.firstPlayerName} con ${this.playersScore[0]} puntos` : `${this.secondPlayerName} con ${this.playersScore[1]} puntos`) 
+        if (this.playersScore[0] == this.playersScore[1]){
+            return `¡Es un empate! Ambos jugadores obtuvieron un puntaje de ${this.playersScore[0]}.`
+        }
+
+        return "¡El ganador es " + (this.playersScore[0] > this.playersScore[1]? 
+            `${this.firstPlayerName} con ${this.playersScore[0]} puntos!` : 
+            `${this.secondPlayerName} con ${this.playersScore[1]} puntos!`) 
     }
 
 }
