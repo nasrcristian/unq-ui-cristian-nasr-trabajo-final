@@ -1,8 +1,23 @@
-# React + Vite
+# Trabajo final para la materia Construcción de Interfaces de Usuario - Nasr Cristian
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Para poder correr el proyecto:
 
-Currently, two official plugins are available:
+1. Clonar el repositorio: 
+```shell
+git clone https://github.com/nasrcristian/unq-ui-cristian-nasr-trabajo-final.git
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2. Moverse a la carpeta src dentro del repositorio:
+```shell
+cd unq-ui-cristian-nasr-trabajo-final/src
+```
+
+3. Instalar las dependencias:
+```shell
+npm install
+```
+   
+4. Levantar el proyecto:
+```shell
+npm run dev
+```
