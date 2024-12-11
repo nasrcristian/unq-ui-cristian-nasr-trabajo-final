@@ -17,7 +17,7 @@ function MainGame({options, endGame}){
 
     useEffect(() => {
         if(selectedCards.length === 2){
-            setTimeout(compareCards, 400)
+            setTimeout(compareCards, 600)
         }
     }, [selectedCards])
 

@@ -5,12 +5,12 @@ function Card({item, handleSelectCard}){
 
     const [isFoundCard, setIsFoundCard] = useState(false)
     const [isSelectedCard, setIsSelectedCard] = useState(false)
-    const [showImagesInitially, setShowImagesInitially] = useState(true); // Nuevo estado
+    const [showImagesInitially, setShowImagesInitially] = useState(true);
 
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowImagesInitially(false);
-        }, 1000);
+        }, 1200);
 
         return () => clearTimeout(timer);
     }, []);
